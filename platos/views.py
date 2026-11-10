@@ -9,9 +9,24 @@ def estado(request):
     return Response({"app": "Cafetería UTLA", "version": "1.0"})
 
 
-@api_view(['GET'])
+@api_view(['GET', 'POST'])
 def platos(request):
-    return Response(PLATOS)
+    if request.method == 'GET':
+        return Response(PLATOS)
+
+    nombre = request.data.get('nombre')
+    precio = request.data.get('precio')
+
+    if not nombre or precio is None:
+        return Response({"error": "nombre y precio son obligatorios"}, status=400)
+
+    nuevo = {
+        "id": max(p["id"] for p in PLATOS) + 1,
+        "nombre": nombre,
+        "precio": precio,
+    }
+    PLATOS.append(nuevo)
+    return Response(nuevo, status=201)
 
 
 @api_view(['GET'])
