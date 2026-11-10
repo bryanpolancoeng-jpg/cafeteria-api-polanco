@@ -1,0 +1,232 @@
+{
+  "info": {
+    "_postman_id": "6f53931a-58f0-43f1-826f-560e42d3ce90",
+    "name": "Cafetería UTLA",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "55217107",
+    "_collection_link": "https://go.postman.co/collection/55217107-6f53931a-58f0-43f1-826f-560e42d3ce90?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "1 - GET estado",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/estado/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "estado",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "2 - POST estado",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/estado/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "estado",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "3 - GET platos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/platos/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "platos",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "4 - GET plato 2",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/platos/2/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "platos",
+            "2",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "5 - GET plato 99",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/platos/99/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "platos",
+            "99",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "6 - POST plato",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"nombre\": \"Horchata\", \"precio\": 0.75}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/platos/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "platos",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "7 - POST sin nombre",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"precio\": 0.75}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/platos/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "platos",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "8 - POST sin precio",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"nombre\": \"Horchata\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/platos/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "platos",
+            ""
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
