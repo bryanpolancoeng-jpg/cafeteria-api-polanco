@@ -12,3 +12,11 @@ def estado(request):
 @api_view(['GET'])
 def platos(request):
     return Response(PLATOS)
+
+
+@api_view(['GET'])
+def plato_detalle(request, id):
+    for plato in PLATOS:
+        if plato["id"] == id:
+            return Response(plato)
+    return Response({"error": "Plato no encontrado"}, status=404)
